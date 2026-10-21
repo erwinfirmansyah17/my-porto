@@ -1,0 +1,34 @@
+.rb-spotlight {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  --spot-x: 50%;
+  --spot-y: 50%;
+}
+
+.rb-spotlight::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  background: radial-gradient(420px circle at var(--spot-x) var(--spot-y), var(--spot-color), transparent 75%);
+  transition: opacity .35s ease;
+}
+
+.rb-spotlight:hover::before,
+.rb-spotlight:focus-within::before {
+  opacity: 1;
+}
+
+.rb-magnet {
+  display: inline-flex;
+  transform: translate3d(var(--magnet-x, 0px), var(--magnet-y, 0px), 0);
+  transition: transform .25s ease-out;
+}
+
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  .rb-spotlight::before { display: none; }
+  .rb-magnet { transform: none; }
+}

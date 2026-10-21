@@ -1,0 +1,17 @@
+.skills-section { background:#0b1321; }
+.toolkit-toolbar { display:flex; justify-content:space-between; align-items:center; gap:20px; padding-bottom:15px; border-bottom:1px solid var(--line); font:9px var(--mono); color:var(--muted); }
+.toolkit-toolbar button { background:#142137; border:1px solid var(--line); border-radius:7px; padding:11px 16px; color:var(--ice); font:10px var(--mono); cursor:pointer; }
+.toolkit-toolbar button:hover { border-color:var(--blue); }
+.toolkit-wall { height:490px; margin:0 -30px; }
+.toolkit-wall .drift-wall { mask-image:linear-gradient(transparent,#000 12%,#000 85%,transparent); -webkit-mask-image:linear-gradient(transparent,#000 12%,#000 85%,transparent); }
+.toolkit-wall .drift-wall__inner { border:1px solid #405774; background:#132239; }
+.toolkit-wall .drift-wall__overlay { opacity:.1; }.toolkit-wall .drift-wall__plane { cursor:default; }
+.toolkit-tile { display:flex; height:100%; flex-direction:column; justify-content:center; align-items:flex-start; padding:20px; background:radial-gradient(ellipse at 100% 0,#89b7f21a,transparent 70%); }
+.toolkit-symbol { display:block; color:#b9d8ff; font:500 25px var(--mono); margin-bottom:14px; }
+.toolkit-tone-1 .toolkit-symbol { color:#9bdfd0; }.toolkit-tone-2 .toolkit-symbol { color:#d3b58e; }.toolkit-tone-3 .toolkit-symbol { color:#c2b6e5; }
+.toolkit-tile strong { font:500 14px var(--display); color:#eef3fa; }.toolkit-tile small { margin-top:8px; color:var(--muted); font:8px var(--mono); }
+.toolkit-index { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:26px; padding-top:25px; border-top:1px solid var(--line); }
+.toolkit-index h3 { display:flex; gap:12px; align-items:center; font-size:14px; font-weight:500; }.toolkit-index h3 > span { color:var(--blue); font:9px var(--mono); }
+.toolkit-index p { color:var(--muted); font-size:12px; line-height:1.9; margin-bottom:0; }
+@media(max-width:900px) { .toolkit-index { grid-template-columns:1fr 1fr; }.toolkit-wall { margin-inline:-15px; } }
+@media(max-width:500px) { .toolkit-wall { height:370px; }.toolkit-toolbar { font-size:8px; gap:10px; }.toolkit-toolbar button { padding:11px; font-size:9px; }.toolkit-index { gap:22px 18px; }.toolkit-index h3 { font-size:12px; gap:8px; }.toolkit-index p { font-size:11px; } }

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" fill="none">
+  <defs>
+    <radialGradient id="bg"><stop stop-color="#28435f"/><stop offset="1" stop-color="#101d2e"/></radialGradient>
+    <linearGradient id="person" x1="300" y1="260" x2="300" y2="750" gradientUnits="userSpaceOnUse"><stop stop-color="#86a4c1"/><stop offset="1" stop-color="#283e58"/></linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" stroke="#9dc4ec" stroke-opacity=".07"/></pattern>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h600v750H0z"/><path fill="url(#grid)" d="M0 0h600v750H0z"/>
+  <circle cx="300" cy="320" r="217" stroke="#9dc4ec" stroke-opacity=".15"/><circle cx="300" cy="320" r="260" stroke="#9dc4ec" stroke-opacity=".08"/>
+  <circle cx="300" cy="295" r="92" fill="url(#person)"/>
+  <path d="M92 750V635c0-120 81-211 208-211s208 91 208 211v115" fill="url(#person)"/>
+  <path d="M42 90V42h48M510 42h48v48M42 660v48h48M510 708h48v-48" stroke="#b9d8ff" stroke-opacity=".5"/>
+  <text x="300" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" letter-spacing="5" fill="#b9d8ff">PORTRAIT / ERWIN</text>
+</svg>

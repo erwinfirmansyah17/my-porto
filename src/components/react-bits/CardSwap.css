@@ -1,0 +1,3 @@
+.card-swap-container { position: relative; width: min(100%, 410px); height: 340px; perspective: 1100px; }
+.swap-card { position: absolute; inset: 0; border: 1px solid #40516e; border-radius: 15px; background: #101a2b; transform-style: preserve-3d; backface-visibility: hidden; overflow: hidden; box-shadow: 0 24px 65px #0005; }
+@media(max-width:700px) { .card-swap-container { width: calc(100% - 46px); max-width: 380px; height: 310px; } }

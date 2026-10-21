@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portofolio Erwin Firmansyah
 
 Portofolio React dan Vite yang mengambil seluruh data personal dari [`src/profil-data.js`](src/profil-data.js). Fakta dalam berkas tersebut disusun dari `CV ERWIN FIRMANSYAH 2.pdf`.
@@ -51,3 +52,6 @@ Simpan foto Anda, misalnya `foto-erwin.jpg`, di folder `public/`. Ubah `identita
 - `src/App.css` dan `src/index.css`: token tema, tipografi, dan gaya bersama.
 
 Tautan repositori mengambil data `project`, sedangkan LinkedIn mengambil data `linkMedia` dari `profil-data.js`. Formulir pengiriman pesan tidak memerlukan backend: kontak tersedia melalui email, telepon, dan LinkedIn.
+=======
+# myporto
+>>>>>>> e0637a3a5395357ea1161a8bb18b498063c69c2b

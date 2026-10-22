@@ -61,7 +61,7 @@ const profil = {
     },
   ],
   pendidikan: [
-    { institusi: 'Universitas Trunojoyo Madura', jurusan: 'S1 Teknik Informatika', periode: 'Agustus 2022 — Juli 2026', ipk: '3,67' },
+    { institusi: 'Universitas Trunodjoyo Madura', jurusan: 'S1 Teknik Informatika', periode: 'Agustus 2022 — Juli 2026', ipk: '3,67' },
     { institusi: 'SMK Negeri 1 Sumenep', jurusan: 'Teknik Komputer dan Jaringan', periode: '2019 — 2022' },
   ],
   organisasi: [
@@ -71,14 +71,13 @@ const profil = {
     { peran: 'Koordinator Sie Acara', organisasi: 'PKKMB Fakultas Teknik', periode: '2024', ringkasan: 'Memimpin penyusunan dan pelaksanaan acara untuk sekitar 800 peserta.' },
     { peran: 'Tim IT', organisasi: 'KPUM Fakultas Teknik', periode: '2023', ringkasan: 'Mengelola dan memvalidasi data pemilih serta merekap hasil pemungutan suara elektronik.' },
   ],
-  project: [
-    { nama: 'Smart Breeding-V0.1', tahun: '2026', deskripsi: 'Sistem deteksi bibit unggul sapi berbasis citra 2D. Menggunakan model YOLOv8 untuk mendeteksi ciri fisik bibit unggul. Tercatat sebagai karya tulis ilmiah dengan hak cipta.', link: 'https://github.com/erwinfirmansyah/smart-breeding' },
-    { nama: 'TeknoMart', tahun: '2025', deskripsi: 'Sistem e-commerce untuk penjualan produk teknologi. Menggunakan teknologi web modern dan database yang efisien.', link: 'https://github.com/erwinfirmansyah/teknomart' },
-  ],
+  // Isi website dengan URL website karya; gunakan string kosong jika belum tersedia.
   karya: [
-    { kategori: 'HAK CIPTA', tahun: '2026', judul: 'Smart Breeding-V0.1',gambar: '/project/smartbreeding.png', deskripsi: 'Sistem deteksi bibit unggul sapi berbasis citra 2D. Tercatat sebagai karya tulis ilmiah dengan hak cipta.', konteks: 'Kemenkumham RI · Universitas Trunojoyo Madura' },
-    { kategori: 'PENGEMBANGAN WEB', tahun: '2025', judul: 'E-Commerce Pertanian', gambar: '/project/ecomkp.png', deskripsi: 'Aplikasi web yang dikembangkan dari front-end hingga back-end dalam program magang.', konteks: 'Dinas Pertanian Kabupaten Bangkalan' },
-    { kategori: 'PENGEMBANGAN WEB', tahun: '2025', judul: 'TeknoMart', gambar: '/project/teknomart.png', deskripsi: 'Sistem e-commerce untuk penjualan produk teknologi. Menggunakan teknologi web modern dan database yang efisien.', konteks: 'Proyek mandiri' },
+    { kategori: 'PENGEMBANGAN WEB', tahun: '2026', judul: 'Projeka', website: 'https://www.projeka.my.id/',gambar: '/project/projeka.png', deskripsi: 'Sistem Joki Website, programming, design, data, serta joki mahasiswa untuk skripsi, makalah, proposal, dan tugas kuliah.', konteks: 'Freelance' },
+    { kategori: 'HAK CIPTA', tahun: '2026', judul: 'Smart Breeding-V0.1', website: '',gambar: '/project/smartbreeding.png', deskripsi: 'Sistem deteksi bibit unggul sapi berbasis citra 2D. Menggunakan model YOLOv8 untuk mendeteksi ciri fisik bibit unggul. Tercatat sebagai karya tulis ilmiah dengan hak cipta.', konteks: 'Kemenkumham RI · Universitas Trunojoyo Madura' },
+    { kategori: 'DATA SCIENCE', tahun: '2026', judul: 'Klasifikasi Citra LSD', website: 'https://ta-skripsi-erwin.streamlit.app/', gambar: '/project/klasifikasi_lsd.png', deskripsi: 'Sistem klasifikasi citra Lumpy Skin Disease menggunakan teknik deep learning metode VGG19 dengan fitur Triple Attention Mechanism yang disegmentasi U2-Net.', konteks: 'Tugas Akhir Skripsi' },
+    { kategori: 'PENGEMBANGAN WEB', tahun: '2025', judul: 'E-Commerce Pertanian', website: '', gambar: '/project/ecomkp.png', deskripsi: 'Aplikasi web yang dikembangkan dari front-end hingga back-end dalam program magang.', konteks: 'Dinas Pertanian Kabupaten Bangkalan' },
+    { kategori: 'PENGEMBANGAN WEB', tahun: '2025', judul: 'TeknoMart', website: '', gambar: '/project/teknomart.png', deskripsi: 'Sistem e-commerce untuk penjualan produk teknologi. Menggunakan teknologi web modern dan database yang efisien.', konteks: 'Proyek mandiri' },
   ],
   keahlian: [
     { kategori: 'Data Science & AI', daftar: ['Python', 'Machine Learning', 'Deep Learning', 'Computer Vision'] },
@@ -92,6 +91,7 @@ const profil = {
     { penyelenggara: 'Pelatihan kepemimpinan', program: ['Latihan Keterampilan Manajemen Mahasiswa Tingkat Menengah', 'Latihan Keterampilan Manajemen Mahasiswa Tingkat Dasar'] },
   ],
   linkMedia: [
+    { platform: 'GitHub', url: 'https://github.com/erwinfirmansyah17' },
     { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/erwin-firmansyah-7a0b4b1b9/' },
   ]
   }

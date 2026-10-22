@@ -1,9 +1,11 @@
+import { useLanguage } from '../../language-context'
 // React Bits PillNav adaptation. Upstream circle reveal retained; native anchors and accessible mobile navigation.
 import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import './PillNav.css'
 
 export default function PillNav({ items, activeHref, name }) {
+  const { t, language, setLanguage } = useLanguage()
   const [open, setOpen] = useState(false)
   const root = useRef(null)
   const trigger = useRef(null)
@@ -40,7 +42,7 @@ export default function PillNav({ items, activeHref, name }) {
   const enter = index => timelines.current[index]?.play()
   const leave = index => timelines.current[index]?.reverse()
   return (
-    <nav ref={root} className="pill-nav" aria-label="Navigasi utama">
+    <nav ref={root} className="pill-nav" aria-label={t("Navigasi utama")}>
       <a href="#beranda" className="nav-discipline" onClick={() => setOpen(false)}>Data &amp; Development</a>
       <div className="pill-nav-links">
         {items.map((item, index) => (
@@ -50,8 +52,13 @@ export default function PillNav({ items, activeHref, name }) {
           </a>
         ))}
       </div>
+      <div className="nav-profile-controls">
+      <div className="language-switch" role="group" aria-label={language === 'en' ? 'Language' : 'Bahasa'}>
+        {['id', 'en'].map(code => <button key={code} type="button" lang={code} aria-label={code === 'id' ? 'Bahasa Indonesia' : 'English'} aria-pressed={language === code} onClick={() => setLanguage(code)}>{code.toUpperCase()}</button>)}
+      </div>
       <a href="#profil" className="nav-owner" onClick={() => setOpen(false)}>{name}</a>
-      <button ref={trigger} type="button" className="nav-toggle" aria-expanded={open} aria-controls="mobile-nav" aria-label={open ? 'Tutup menu' : 'Buka menu'} onClick={() => setOpen(!open)}><span /><span /></button>
+      </div>
+      <button ref={trigger} type="button" className="nav-toggle" aria-expanded={open} aria-controls="mobile-nav" aria-label={t(open ? 'Tutup menu' : 'Buka menu')} onClick={() => setOpen(!open)}><span /><span /></button>
       <div id="mobile-nav" className="mobile-nav" hidden={!open}>
         {items.map(item => <a key={item.href} href={item.href} aria-current={activeHref === item.href ? 'location' : undefined} onClick={() => setOpen(false)}>{item.label}<span aria-hidden="true">↗</span></a>)}
       </div>

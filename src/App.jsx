@@ -1,3 +1,4 @@
+import { useLanguage } from './language-context'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Hero from './sections/Hero'
@@ -12,8 +13,9 @@ import './App.css'
 import './editorial.css'
 
 export default function App() {
+  const { t } = useLanguage()
   return <>
-    <a className="skip-link" href="#main-content">Lewati navigasi</a>
+    <a className="skip-link" href="#main-content">{t("Lewati navigasi")}</a>
     <Navbar />
     <main id="main-content">
       <Hero />

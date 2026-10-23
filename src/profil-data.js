@@ -8,7 +8,7 @@ const profil = {
     foto: '/profil.jpeg',
     lokasi: 'Sumenep',
     email: 'erwinfirmansyahh17@gmail.com',
-    telepon: '081999600171',
+    telepon: '6281999600171',
   },
   ringkasan: {
     singkat: 'Lulusan Teknik Informatika dengan minat pada Data Science, Data Analyst, Networking, dan pengembangan web.',
@@ -91,7 +91,7 @@ const profil = {
     { penyelenggara: 'Pelatihan kepemimpinan', program: ['Latihan Keterampilan Manajemen Mahasiswa Tingkat Menengah', 'Latihan Keterampilan Manajemen Mahasiswa Tingkat Dasar'] },
   ],
   linkMedia: [
-    { platform: 'GitHub', url: 'https://github.com/erwinfirmansyah17' },
+    { platform: 'GitHub', name: 'github.com/erwinfirmansyah17', url: 'https://github.com/erwinfirmansyah17' },
     { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/erwin-firmansyah-7a0b4b1b9/' },
   ]
   }
